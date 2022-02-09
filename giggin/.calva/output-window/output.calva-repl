@@ -1,0 +1,54 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: npx shadow-cljs -d cider/cider-nrepl:0.26.0 watch :app
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉shadow.user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: shadow-cljs...
+;   The Calva Connection Log might have more connection progress information.
+; Connected session: cljs, repl: node-repl
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Jack-in done.
+cljs꞉cljs.user꞉> (js/alert "Hello")
+
+; ReferenceError: alert is not defined
+;     at cljsEval (<eval>:1:2)
+    at global.SHADOW_NODE_EVAL ([stdin]:90:10)
+    at Object.shadow$cljs$devtools$client$node$node_eval [as node_eval] (/home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/node.cljs:24:1)
+    at /home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/node.cljs:49:13
+    at Object.shadow$cljs$devtools$client$env$repl_call [as repl_call] (/home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/env.cljs:102:11)
+    at Object.shadow$cljs$devtools$client$node$repl_invoke [as repl_invoke] (/home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/node.cljs:47:1)
+    at shadow$cljs$devtools$client$node$process_message (/home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/node.cljs:118:5)
+    at /home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/env.cljs:180:9
+    at Object.shadow$cljs$devtools$client$env$process_next_BANG_ [as process_next_BANG_] (/home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/env.cljs:168:7)
+    at Object.shadow$cljs$devtools$client$env$process_ws_msg [as process_ws_msg] (/home/mosioatunya/Projects/learn-reagent-course-files/giggin/.shadow-cljs/builds/node-repl/dev/out/cljs-runtime/shadow/cljs/devtools/client/env.cljs:181:7)
+clj꞉cljs.user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: shadow-cljs...
+;   The Calva Connection Log might have more connection progress information.
+; [:browser-repl] Configuring build.
+; [:browser-repl] Compiling ...
+; [:browser-repl] Build completed. (157 files, 1 compiled, 0 warnings, 1.66s)
+; Connected session: cljs, repl: browser-repl
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+(js/alert "Hello")
+nil
+clj꞉cljs.user꞉> 
+; nREPL Connection was closed
